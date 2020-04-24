@@ -1,0 +1,34 @@
+{
+	"name": "typo3/cms-filemetadata",
+	"type": "typo3-cms-framework",
+	"description": "Add advanced metadata to File.",
+	"homepage": "https://typo3.org",
+	"license": ["GPL-2.0-or-later"],
+	"authors": [{
+		"name": "TYPO3 Core Team",
+		"email": "typo3cms@typo3.org",
+		"role": "Developer"
+	}],
+	"config": {
+		"sort-packages": true
+	},
+	"require": {
+		"typo3/cms-core": "10.3.0"
+	},
+	"conflict": {
+		"typo3/cms": "*"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "10.3.x-dev"
+		},
+		"typo3/cms": {
+			"extension-key": "filemetadata"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"TYPO3\\CMS\\Filemetadata\\Tests\\": "Tests/"
+		}
+	}
+}

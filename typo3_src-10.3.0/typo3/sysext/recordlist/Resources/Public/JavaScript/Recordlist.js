@@ -1,0 +1,13 @@
+/*
+ * This file is part of the TYPO3 CMS project.
+ *
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
+ *
+ * The TYPO3 project - inspiring people to share!
+ */
+define(["require","exports","jquery","TYPO3/CMS/Backend/Storage/Persistent","TYPO3/CMS/Backend/Icons"],(function(t,e,i,s,a){"use strict";return new class{constructor(){this.identifier={entity:".t3js-entity",toggle:".t3js-toggle-recordlist",localize:".t3js-action-localize",icons:{collapse:"actions-view-list-collapse",expand:"actions-view-list-expand",editMultiple:".t3js-record-edit-multiple"}},this.toggleClick=t=>{t.preventDefault();const e=i(t.currentTarget),n=e.data("table"),l=i(e.data("target")),d="expanded"===l.data("state"),o=e.find(".collapseIcon"),c=d?this.identifier.icons.expand:this.identifier.icons.collapse;a.getIcon(c,a.sizes.small).done(t=>{o.html(t)});let r={};s.isset("moduleData.list")&&(r=s.get("moduleData.list"));const u={};u[n]=d?1:0,i.extend(!0,r,u),s.set("moduleData.list",r).done(()=>{l.data("state",d?"collapsed":"expanded")})},this.onEditMultiple=t=>{let e,s,a,n,l;t.preventDefault(),e=i(t.currentTarget).closest("[data-table]"),0!==e.length&&(n=i(t.currentTarget).data("uri"),s=e.data("table"),a=e.find(this.identifier.entity+'[data-uid][data-table="'+s+'"]').map((t,e)=>i(e).data("uid")).toArray().join(","),l=n.match(/{[^}]+}/g),i.each(l,(t,e)=>{const l=e.substr(1,e.length-2).split(":");let d;switch(l.shift()){case"entityIdentifiers":d=a;break;case"T3_THIS_LOCATION":d=T3_THIS_LOCATION;break;default:return}i.each(l,(t,e)=>{"editList"===e&&(d=this.editList(s,d))}),n=n.replace(e,d)}),window.location.href=n)},this.disableButton=t=>{i(t.currentTarget).prop("disable",!0).addClass("disabled")},i(document).on("click",this.identifier.toggle,this.toggleClick),i(document).on("click",this.identifier.icons.editMultiple,this.onEditMultiple),i(document).on("click",this.identifier.localize,this.disableButton)}editList(t,e){const i=[];let s=0,a=e.indexOf(",");for(;-1!==a;)this.getCheckboxState(t+"|"+e.substr(s,a-s))&&i.push(e.substr(s,a-s)),s=a+1,a=e.indexOf(",",s);return this.getCheckboxState(t+"|"+e.substr(s))&&i.push(e.substr(s)),i.length>0?i.join(","):e}getCheckboxState(t){const e="CBC["+t+"]";return document.querySelector('form[name="dblistForm"] [name="'+e+'"]').checked}}}));

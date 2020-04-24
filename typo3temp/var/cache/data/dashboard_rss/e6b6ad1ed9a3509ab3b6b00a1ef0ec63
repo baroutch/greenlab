@@ -1,0 +1,16 @@
+a:5:{i:0;a:4:{s:5:"title";s:115:"TYPO3-EXT-SA-2020-003: Multiple vulnerabilities in extension "Magalone Flipbook for TYPO3" (magaloneflipbook)
+					";s:4:"link";s:57:"https://typo3.org/security/advisory/typo3-ext-sa-2020-003";s:7:"pubDate";s:44:"
+						Tue, 10 Mar 2020 12:02:00 +0100
+					";s:11:"description";s:196:"It has been discovered that the extension "Magalone Flipbook for TYPO3" (magaloneflipbook) is susceptible to Remote Code Execution, Arbitrary File Upload, Path Traversal and Broken Access Control.";}i:1;a:4:{s:5:"title";s:83:"TYPO3-EXT-SA-2020-002: Remote Code Execution in extension "PHPUnit" (phpunit)
+					";s:4:"link";s:57:"https://typo3.org/security/advisory/typo3-ext-sa-2020-002";s:7:"pubDate";s:44:"
+						Tue, 10 Mar 2020 12:01:00 +0100
+					";s:11:"description";s:102:"It has been discovered that the extension "PHPUnit" (phpunit) is susceptible to Remote Code Execution.";}i:2;a:4:{s:5:"title";s:81:"TYPO3-EXT-SA-2020-001: SQL Injection in extension "phpmyadmin" (phpmyadmin)
+					";s:4:"link";s:57:"https://typo3.org/security/advisory/typo3-ext-sa-2020-001";s:7:"pubDate";s:44:"
+						Tue, 10 Mar 2020 12:00:00 +0100
+					";s:11:"description";s:100:"It has been discovered that the extension "phpmyadmin" (phpmyadmin) is susceptible to SQL Injection.";}i:3;a:4:{s:5:"title";s:70:"TYPO3-EXT-SA-2019-023: CSRF in extension "femanager" (femanager)
+					";s:4:"link";s:57:"https://typo3.org/security/advisory/typo3-ext-sa-2019-023";s:7:"pubDate";s:44:"
+						Tue, 17 Dec 2019 13:04:00 +0100
+					";s:11:"description";s:118:"It has been discovered that the extension "femanager" (femanager) is susceptible to Cross-Site-Request-Forgery (CSRF).";}i:4;a:4:{s:5:"title";s:127:"TYPO3-EXT-SA-2019-022: Privilege Escalation in extension "femanager direct mail subscription" (femanager_dmail_subscribe)
+					";s:4:"link";s:57:"https://typo3.org/security/advisory/typo3-ext-sa-2019-022";s:7:"pubDate";s:44:"
+						Tue, 17 Dec 2019 13:03:00 +0100
+					";s:11:"description";s:146:"It has been discovered that the extension "femanager direct mail subscription" (femanager_dmail_subscribe) is susceptible to Privilege Escalation.";}}
