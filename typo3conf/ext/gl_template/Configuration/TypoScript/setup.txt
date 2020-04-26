@@ -1,0 +1,148 @@
+config{
+
+    baseURL = http://{$gl_template.baseUrl}/
+    no_cache = 0
+
+}
+
+# *****************************************************************************************
+
+page = PAGE
+page {
+
+    includeCSS {
+        bootstrap = {$gl_template.resDir}/Public/css/bootstrap.css
+        themify-icons = {$gl_template.resDir}/Public/css/themify-icons.css
+        flexslider = {$gl_template.resDir}/Public/css/flexslider.css
+        theme = {$gl_template.resDir}/Public/css/theme.css
+        custom = {$gl_template.resDir}/Public/css/custom.css
+    }
+
+    includeJS {
+        
+    }
+
+    includeJSFooter{
+        jquery = {$gl_template.resDir}/Public/js/jquery.min.js
+        bootstrap = {$gl_template.resDir}/Public/js/bootstrap.min.js
+        flexslider = {$gl_template.resDir}/Public/js/flexslider.min.js
+        twitterfetcher = {$gl_template.resDir}/Public/js/twitterfetcher.min.js
+        spectragram = {$gl_template.resDir}/Public/js/spectragram.min.js
+        smooth-scroll = {$gl_template.resDir}/Public/js/smooth-scroll.min.js
+        parallax = {$gl_template.resDir}/Public/js/parallax.min.js
+        scripts = {$gl_template.resDir}/Public/js/scripts.js
+    }
+
+    meta {
+        title.field = title
+        keywords.field = keywords
+        description.field = description
+    }
+
+    headerData.1 = TEXT
+    headerData.1.value  (
+        <link href='http://fonts.googleapis.com/css?family=Montserrat%7CInconsolata:400,700%7CPathway+Gothic+One' rel='stylesheet' type='text/css'>
+    )
+
+    shortcutIcon = fileadmin/files/favicon.ico
+
+}
+
+# header
+page.5 = FLUIDTEMPLATE
+page.5 {
+
+    file = {$gl_template.resDir}/Private/Templates/Transverse/header.html
+
+    variables {
+        mainLogo = TEXT
+        mainLogo {
+            value = <img src="{$gl_template.resDir}/Public/img/logo-greenlab.png" alt="Logo This Is Honest" width="200px" />
+            typolink {
+                parameter = 1
+                ATagParams = class="logo"
+            }
+        }
+
+        address = TEXT
+        address.value  = {$gl_template.address}
+
+        openning = TEXT
+        openning.value  = {$gl_template.openning}
+
+        twitter = TEXT
+        twitter.value  = {$gl_template.twitter}
+
+        facebook = TEXT
+        facebook.value  = {$gl_template.facebook}
+
+        instagram = TEXT
+        instagram.value  = {$gl_template.instagram}
+    }
+}
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+
+    variables{
+
+    }
+    file.stdWrap.cObject = CASE
+    file.stdWrap.cObject {
+
+        key.data = pagelayout
+
+        1 = TEXT
+        1.value = {$gl_template.resDir}/Private/Templates/home.html
+    }
+}
+
+page.15 = FLUIDTEMPLATE
+page.15 {
+
+    file = {$gl_template.resDir}/Private/Templates/Transverse/footer.html
+
+    variables{
+        footer-logo = TEXT
+        footer-logo {
+            value = <img src="{$gl_template.resDir}/Public/img/logo-footer-greenlab.png" alt="Logo This Is Honest" width="200px" />
+            typolink {
+                parameter = 1
+                ATagParams = class="image-small display-block center mb-xs-24"
+            }
+        }
+
+        name = TEXT
+        name.value  = {$gl_template.name}
+
+        address = TEXT
+        address.value  = {$gl_template.address}
+
+        openning = TEXT
+        openning.value  = {$gl_template.openning}
+
+        twitter = TEXT
+        twitter.value  = {$gl_template.twitter}
+
+        facebook = TEXT
+        facebook.value  = {$gl_template.facebook}
+
+        instagram = TEXT
+        instagram.value  = {$gl_template.instagram}
+    }
+
+}
+
+lib.banner = FILES
+lib.banner {
+    references {
+    table = pages
+    fieldName = media
+    uid.data = page:uid
+    }
+    renderObj = IMAGE
+    renderObj {
+    file.import.data = file:current:uid
+    file.treatIdAsReference = 1
+    }
+}

@@ -1,0 +1,23 @@
+base: 'http://localhost/'
+baseVariants: {  }
+errorHandling: {  }
+languages:
+  -
+    title: French
+    enabled: true
+    languageId: '0'
+    base: /fr/
+    typo3Language: fr
+    locale: fr_FR.UTF-8
+    iso-639-1: fr
+    navigationTitle: French
+    hreflang: fr-fr
+    direction: ltr
+    flag: fr
+    websiteTitle: ''
+rootPageId: 1
+routes:
+  -
+    route: robots.txt
+    type: staticText
+websiteTitle: ''

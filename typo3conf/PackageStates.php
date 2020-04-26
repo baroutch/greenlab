@@ -95,6 +95,9 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'gl_template' => [
+            'packagePath' => 'typo3conf/ext/gl_template/',
+        ],
     ],
     'version' => 5,
 ];
