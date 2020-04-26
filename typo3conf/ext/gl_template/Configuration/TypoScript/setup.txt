@@ -85,7 +85,8 @@ page.10 = FLUIDTEMPLATE
 page.10 {
 
     variables{
-
+        home-center < styles.content.get
+        home-center.select.where = colPos = 1
     }
     file.stdWrap.cObject = CASE
     file.stdWrap.cObject {
