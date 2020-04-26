@@ -1,0 +1,28 @@
+{
+    "name": "greenlab/gl-template",
+    "type": "typo3-cms-extension",
+    "description": "Template qui d\u00e9finit la structure g\u00e9n\u00e9rale du site",
+    "authors": [
+        {
+            "name": "TABARY Olivier",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "GREENLAB\\HoTemplate\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GREENLAB\\HoTemplate\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "gl_template": "self.version",
+        "typo3-ter/gl-template": "self.version"
+    }
+}

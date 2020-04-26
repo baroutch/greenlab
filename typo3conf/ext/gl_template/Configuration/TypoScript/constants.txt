@@ -1,0 +1,24 @@
+plugin.tx_gltemplate_pi1.settings.dirIcone = uploads/ho_content/
+
+gl_template.resDir = typo3conf/ext/gl_template/Resources
+
+#cat=gl_template/baseUrl; type=text; label=base Url
+gl_template.baseUrl = localhost
+
+#cat=gl_template/address; type=; label= Name of the bar
+gl_template.name = GREEN LAB
+
+#cat=gl_template/address; type=; label= Address of the bar
+gl_template.address = Avenue Louise 520, 1000 Bruxelles, Belgique
+
+#cat=gl_template/address; type=; label= Penning hours of the bar
+gl_template.openning = Du Lundi au Dimanche 12h00 / 3h00
+
+#cat=gl_template/address; type=; label= Twitter link
+gl_template.twitter = 
+
+#cat=gl_template/address; type=; label= Facebook link
+gl_template.facebook = https://www.facebook.com/GreenLabLouise/
+
+#cat=gl_template/address; type=; label= Instagram link
+gl_template.instagram = https://www.instagram.com/greenlabbxl/
