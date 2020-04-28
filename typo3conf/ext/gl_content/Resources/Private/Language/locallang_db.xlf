@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2015-06-11T10:04:10Z" product-name="gl_content">
+        <header/>
+        <body>
+            <trans-unit id="tx_gl_content_domain_model_pi1">
+                <source>Bloc About us</source>
+            </trans-unit>
+            <trans-unit id="tx_gl_content_domain_model_pi1.description">
+                <source>Plugin qui gère l'affichage des blocs about us</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
