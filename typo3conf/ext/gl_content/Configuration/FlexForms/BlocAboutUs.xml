@@ -20,7 +20,7 @@
 
                     <settings.description>
                         <TCEforms>
-                            <label>LLL:EXT:extension_name/Resources/Private/Language/locallang_db.xlf:flexform.text.element.labelname</label>
+                            <label>Description du bloc</label>
                             <config>
                                 <type>text</type>
                                 <size>10</size>

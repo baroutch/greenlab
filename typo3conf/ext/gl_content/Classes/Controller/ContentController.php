@@ -11,4 +11,13 @@ class ContentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
         return;
 
     }
+
+    public function blocCitationAction(){
+
+        $this->view->assign('citation', $this->settings['citation']);
+        $this->view->assign('signature', $this->settings['signature']);
+
+        return;
+
+    }
 }

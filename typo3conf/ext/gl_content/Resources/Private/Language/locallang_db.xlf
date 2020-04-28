@@ -9,6 +9,12 @@
             <trans-unit id="tx_gl_content_domain_model_pi1.description">
                 <source>Plugin qui gère l'affichage des blocs about us</source>
             </trans-unit>
+            <trans-unit id="tx_gl_content_domain_model_pi2">
+                <source>Bloc Citation</source>
+            </trans-unit>
+            <trans-unit id="tx_gl_content_domain_model_pi2.description">
+                <source>Plugin qui gère l'affichage des blocs citation</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
