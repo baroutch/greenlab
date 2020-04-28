@@ -1,0 +1,19 @@
+{
+    "name": "greenlab/gl-content",
+    "type": "typo3-cms-extension",
+    "description": "Plugin qui permet de g\u00e9rer les blocs de contenus du site",
+    "authors": [
+        {
+            "name": "TABARY Olivier",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^10.7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "GreenLab\\GlContent\\": "Classes"
+        }
+    }
+}

@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => false,
+        'debug' => true,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=2$clpWUWNmdTBnYnhjcHFxdQ$kkceWpaiGAmH2uAiEPQkIEljargOxdojDAsyzArvW9k',
         'loginSecurityLevel' => 'normal',
@@ -42,7 +42,7 @@ return [
         ],
     ],
     'FE' => [
-        'debug' => false,
+        'debug' => true,
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2idPasswordHash',
             'options' => [],
@@ -97,10 +97,10 @@ return [
                 ],
             ],
         ],
-        'devIPmask' => '',
-        'displayErrors' => 0,
+        'devIPmask' => '*',
+        'displayErrors' => 1,
         'encryptionKey' => '96e2effb56e44b19831355771ce796fb3c11526c6bf855984bbee11d5fa02f388c3630e6a531282001f6c81977e55968',
-        'exceptionalErrors' => 4096,
+        'exceptionalErrors' => 12290,
         'features' => [
             'felogin.extbase' => true,
             'fluidBasedPageModule' => true,
