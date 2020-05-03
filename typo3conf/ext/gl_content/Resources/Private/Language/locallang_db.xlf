@@ -15,6 +15,12 @@
             <trans-unit id="tx_gl_content_domain_model_pi2.description">
                 <source>Plugin qui gère l'affichage des blocs citation</source>
             </trans-unit>
+            <trans-unit id="tx_gl_content_domain_model_pi3">
+                <source>Bloc Photos</source>
+            </trans-unit>
+            <trans-unit id="tx_gl_content_domain_model_pi3.description">
+                <source>Plugin qui gère l'affichage des blocs photos</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
