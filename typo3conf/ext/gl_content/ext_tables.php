@@ -23,6 +23,12 @@ call_user_func(
             'Bloc Photos'
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'GreenLab.GlContent',
+            'Pi4',
+            'Bloc Menu'
+        );
+
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('gl_content', 'Configuration/TypoScript', 'Plugin Content');
 
     }
@@ -50,4 +56,11 @@ $iconRegistry->registerIcon(
     'extension-greenlab-content-blocphotos',
     \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
     ['source' => 'EXT:gl_content/Resources/Public/Icons/photos.svg']
+);
+
+$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+$iconRegistry->registerIcon(
+    'extension-greenlab-content-blocmenu',
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => 'EXT:gl_content/Resources/Public/Icons/menu.svg']
 );
