@@ -33,6 +33,20 @@ call_user_func(
             )
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'GreenLab.GlContent',
+            'Pi3',
+            array(
+                'Content' => 'blocPhotos',
+
+            ),
+            // non-cacheable actions
+            array(
+                'Content' => 'blocPhotos',
+
+            )
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -65,6 +79,26 @@ call_user_func(
                             tt_content_defValues {
                                 CType = list
                                 list_type = glcontent_pi2
+                            }
+                        }
+                    }
+                    show = *
+                }
+           }'
+        );
+
+        // wizards
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+            'mod {
+                wizards.newContentElement.wizardItems.plugins {
+                    elements {
+                        pi3 {
+                            iconIdentifier = extension-greenlab-content-blocphotos
+                            title = LLL:EXT:gl_content/Resources/Private/Language/locallang_db.xlf:tx_gl_content_domain_model_pi3
+                            description = LLL:EXT:gl_content/Resources/Private/Language/locallang_db.xlf:tx_gl_content_domain_model_pi3.description
+                            tt_content_defValues {
+                                CType = list
+                                list_type = glcontent_pi3
                             }
                         }
                     }
