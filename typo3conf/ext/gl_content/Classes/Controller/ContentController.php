@@ -29,4 +29,13 @@ class ContentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
         return;
 
     }
+
+    public function blocInstaAction(){
+
+        $this->view->assign('photo1', $this->settings['photo1']);
+        $this->view->assign('photo2', $this->settings['photo2']);
+
+        return;
+
+    }
 }

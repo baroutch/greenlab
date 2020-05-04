@@ -1,0 +1,4 @@
+page.includeJSFooter{
+    spectagram = EXT:gl_content/Resources/Public/js/jquery.instagramFeed.js
+    script = EXT:gl_content/Resources/Public/js/script.js
+}

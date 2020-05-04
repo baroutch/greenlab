@@ -29,7 +29,6 @@ page {
         bootstrap = {$gl_template.resDir}/Public/js/bootstrap.min.js
         flexslider = {$gl_template.resDir}/Public/js/flexslider.min.js
         twitterfetcher = {$gl_template.resDir}/Public/js/twitterfetcher.min.js
-        spectragram = {$gl_template.resDir}/Public/js/spectragram.min.js
         smooth-scroll = {$gl_template.resDir}/Public/js/smooth-scroll.min.js
         parallax = {$gl_template.resDir}/Public/js/parallax.min.js
         scripts = {$gl_template.resDir}/Public/js/scripts.js
