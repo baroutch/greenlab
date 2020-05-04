@@ -27,6 +27,12 @@
             <trans-unit id="tx_gl_content_domain_model_pi4.description">
                 <source>Plugin qui gère l'affichage du bloc menu</source>
             </trans-unit>
+            <trans-unit id="tx_gl_content_domain_model_pi5">
+                <source>Bloc Insta</source>
+            </trans-unit>
+            <trans-unit id="tx_gl_content_domain_model_pi5.description">
+                <source>Plugin qui gère l'affichage du bloc Instagram</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
