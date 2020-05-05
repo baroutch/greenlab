@@ -28,5 +28,5 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['glcontent_pi
     // plugin signature: <extension key without underscores> '_' <plugin name in lowercase>
     'glcontent_pi4',
     // Flexform configuration schema file
-    'FILE:EXT:gl_content/Configuration/FlexForms/BlocMenu.xml'
+    'FILE:EXT:gl_content/Configuration/FlexForms/BlocInsta.xml'
 );

@@ -21,11 +21,10 @@ page {
     }
 
     includeJS {
-        
+        jquery = {$gl_template.resDir}/Public/js/jquery.min.js
     }
 
     includeJSFooter{
-        jquery = {$gl_template.resDir}/Public/js/jquery.min.js
         bootstrap = {$gl_template.resDir}/Public/js/bootstrap.min.js
         flexslider = {$gl_template.resDir}/Public/js/flexslider.min.js
         twitterfetcher = {$gl_template.resDir}/Public/js/twitterfetcher.min.js
