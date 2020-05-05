@@ -1,4 +1,7 @@
-page.includeJSFooter{
-    spectagram = EXT:gl_content/Resources/Public/js/jquery.instagramFeed.js
-    script = EXT:gl_content/Resources/Public/js/script.js
+page.includeJS{
+    spectagram = EXT:gl_content/Resources/Public/js/instafeed.min.js
+}
+
+page.includeCSS{
+    script = EXT:gl_content/Resources/Public/css/style.css
 }

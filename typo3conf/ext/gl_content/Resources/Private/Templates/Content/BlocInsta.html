@@ -11,7 +11,7 @@
         <!--end of row-->
         <div class="row">
             <div class="col-sm-12">
-                <div class="instafeed grid-gallery" data-user-name="baroutch" id="instagram-feed">
+                <div class="instafeed grid-gallery" data-user-name="baroutch" id="instafeed">
                 </div>
             </div>
         </div>
@@ -19,3 +19,24 @@
     </div>
     <!--end of container-->
 </section>
+
+<script type="text/javascript">
+
+    $(document).ready(function() { 
+
+    /*jQuery.fn.spectragram.accessData = {
+        accessToken: 'IGQVJVUTdoWHdiVGpVby14aXlxa1ZAkR3JENGU4ZAUlSM1laa1FLS3l2dFAwYjBWYlRRQkpnc1ZAPSnltVkY5dTIxdWpwdXRocXBKcDNYRG1fTUwxcUUzY0NQMXcyLV9WSGZA3T29vcTdiQlN1YW1HUWJqSgZDZD',
+        clientID: '525905801422141'
+    };*/
+
+    var feed = new Instafeed({
+        accessToken: 'IGQVJVUTdoWHdiVGpVby14aXlxa1ZAkR3JENGU4ZAUlSM1laa1FLS3l2dFAwYjBWYlRRQkpnc1ZAPSnltVkY5dTIxdWpwdXRocXBKcDNYRG1fTUwxcUUzY0NQMXcyLV9WSGZA3T29vcTdiQlN1YW1HUWJqSgZDZD',
+        template: '<a href="{{link}}" class="col-sm-3"><img src="{{image}}" /></a>',
+        limit: 8
+    });
+    feed.run();
+
+
+    });
+    
+</script>
