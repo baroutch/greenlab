@@ -1,7 +1,16 @@
 <?php
 namespace GREENLAB\GlContent\Controller;
 
+use \TYPO3\CMS\Core\Utility\GeneralUtility;
+
 class ContentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
+
+    protected $collections = null;
+
+    public function __construc(){
+        parent::__construct();
+        $this->$fileCollectionRepository = new FileCollectionRepository();
+    }
 
     public function blocAboutUsAction(){
 
@@ -23,8 +32,12 @@ class ContentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
     public function blocPhotosAction(){
 
-        $this->view->assign('photo1', $this->settings['photo1']);
-        $this->view->assign('photo2', $this->settings['photo2']);
+        $fileRepository = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Resource\ResourceFactory::class);
+        $fileObjects = $fileRepository->getCollectionObject($this->settings['selectedImages']);
+
+        $fileObjects->loadContents();
+
+        $this->view->assign('fileObjects', $fileObjects);
 
         return;
 

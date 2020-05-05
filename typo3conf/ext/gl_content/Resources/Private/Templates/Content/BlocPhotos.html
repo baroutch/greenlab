@@ -1,18 +1,15 @@
 <section class="pb0">
     <div class="container">
         <div class="row image-row">
-            <div class="col-sm-4">
-                <div class="background-image-holder">
-                    <img alt="Background Image" src="img/body1.jpg" />
-                </div>
-            </div>
-            <div class="col-sm-8">
-                <div class="background-image-holder">
-                    <img alt="Background Image" src="img/body2.jpg" />
-                </div>
-            </div>
+            <f:for each="{fileObjects}" as="file" key="key">
+                <f:cycle values="{0: 'col-sm-4', 1: 'col-sm-8'}" as="cycle">
+                    <div class="{cycle}">
+                        <div class="background-image-holder">
+                            <img alt="Background Image" src="./fileadmin/{key}" />
+                        </div>
+                    </div>
+                </f:cycle>
+            </f:for>
         </div>
-        <!--end of row-->
     </div>
-    <!--end of container-->
 </section>

@@ -9,8 +9,19 @@
                 <type>array</type>
                 <el>
 
-                   
-
+                    <settings.selectedImages>
+                        <TCEforms>
+                            <label>Sélectionner une collection d'image</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>sys_file_collection</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>1</minitems>
+                            </config>
+                        </TCEforms>
+                    </settings.selectedImages>
 
                 </el>
             </ROOT>
