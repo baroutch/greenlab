@@ -1,0 +1,19 @@
+{
+    "name": "greenlab/gl-cocktail",
+    "authors": [
+        {
+           "name": "Baroutch",
+           "role": "Developer"
+        }
+    ],
+    "type": "typo3-cms-extension",
+    "description": "Plugin qui gère la liste des cocktails.",
+    "autoload": {
+        "psr-4": {
+           "GREENLAB\\GlCocktail\\": "Classes/"
+        }
+    },
+    "require": {
+        "typo3/cms-core": ">=9.5 <10.3.99"
+    }
+}

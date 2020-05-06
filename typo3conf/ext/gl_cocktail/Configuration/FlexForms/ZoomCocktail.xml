@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Selection du cocktail</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.titre>
+                        <TCEforms>
+                            <label>Titre du bloc</label>
+                            <config>
+                                <type>input</type>
+                                <size>30</size>
+                            </config>
+                        </TCEforms>
+                    </settings.titre>
+
+                    <settings.selectedCocktail>
+                        <TCEforms>
+                            <label>Sélectionner un cocktail</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>tx_glcocktail_domain_model_cocktail</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>1</minitems>
+                            </config>
+                        </TCEforms>
+                    </settings.selectedCocktail>
+
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>
