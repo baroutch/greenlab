@@ -95,6 +95,9 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'gl_cocktail' => [
+            'packagePath' => 'typo3conf/ext/gl_cocktail/',
+        ],
         'gl_content' => [
             'packagePath' => 'typo3conf/ext/gl_content/',
         ],

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-11-27T17:38:32Z"
+        product-name="gl_cocktail">
+        <header/>
+        <body>
+            <trans-unit id="glcocktail.title">
+                <source>Plugin des cocktail</source>
+            </trans-unit>
+            <trans-unit id="tx_glcocktail_domain_model_cocktail">
+                <source>Cocktail</source>
+            </trans-unit>
+            <trans-unit id="tx_glcocktail_domain_model_cocktail.item_label">
+                <source>Item Label</source>
+            </trans-unit>
+            <trans-unit id="tx_glcocktail_domain_model_cocktail.item_description">
+                <source>Item Description</source>
+            </trans-unit>
+            <trans-unit id="tx_glcocktail_domain_model_cocktail.item_price">
+                <source>Price</source>
+            </trans-unit>
+            <trans-unit id="tx_glcocktail_domain_model_cocktail.item_image">
+                <source>Image</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
