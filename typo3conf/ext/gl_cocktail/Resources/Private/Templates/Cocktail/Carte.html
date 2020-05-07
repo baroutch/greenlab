@@ -1,0 +1,44 @@
+<a id="menu"></a>
+<section class="pb0">
+    <div class="container">
+        <div class="row  mb64 mb-xs-40">
+            <div class="col-sm-12 text-center">
+                <div class="ribbon">
+                    <h6 class="uppercase mb0">{titre-gamme}</h6>
+                </div>
+            </div>
+        </div>
+        <!--end of row-->
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-sm-12">
+                <div class="tabbed-content text-tabs">
+                    <ul class="tabs mb64 mb-xs-24">
+                        <f:for each="{output}" as="gamme" key="key">
+                            <li class="active">
+                                <div class="tab-title">
+                                    <span>{key}</span>
+                                </div>
+                                <div class="tab-content">
+                                    <div class="p0">
+                                        <f:for each="{gamme}" as="cocktail">
+                                            <div class="mb40 mb-xs-24 col-sm-6" style="height:100px;">
+                                                <span class="bold block">{cocktail.name}</span>
+                                                <p class="mb0">
+                                                    {cocktail.description}
+                                                </p>
+                                                <span class="block">12</span>
+                                            </div>
+                                        </f:for> 
+                                    </div>
+                                </div>
+                            </li>  
+                        </f:for>
+                    </ul>
+                </div>
+                <!--end of text tabs-->
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>
