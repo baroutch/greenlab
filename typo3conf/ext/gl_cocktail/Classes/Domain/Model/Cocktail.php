@@ -3,6 +3,7 @@
 namespace GREENLAB\GlCocktail\Domain\Model;
 
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 class Cocktail extends AbstractEntity
 {
@@ -11,6 +12,11 @@ class Cocktail extends AbstractEntity
     protected $description = '';
 
     protected $price = 0;
+
+    /**
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\Category>
+     */
+    protected $categories;
 
     /**
      * images to use in the gallery
@@ -25,6 +31,7 @@ class Cocktail extends AbstractEntity
         $this->setDescription($description);
         $this->setPrice($price);
         $this->images = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $this->categories = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
     }
 
     public function setName(string $name): void
@@ -76,4 +83,20 @@ class Cocktail extends AbstractEntity
     public function getImage() {
         return $this->image;
     }
+
+    /**
+     * @return ObjectStorage
+     */
+    public function getCategories(): ObjectStorage
+    {
+        return $this->categories;
+    }
+    
+    /**
+     * @param ObjectStorage $categories
+     */
+    public function setCategories(ObjectStorage $categories)
+    {
+        $this->categories = $categories;
+    }   
 }

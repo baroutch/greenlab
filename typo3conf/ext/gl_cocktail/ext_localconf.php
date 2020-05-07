@@ -12,3 +12,15 @@ defined('TYPO3_MODE') || die('Access denied.');
         \GREENLAB\GlCocktail\Controller\CocktailController::class => '',
     ]
 );
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    'GreenLab.GlCocktail',
+    'pi2',
+    [
+        \GREENLAB\GlCocktail\Controller\CocktailController::class => 'carte',
+    ],
+    // non-cacheable actions
+    [
+        \GREENLAB\GlCocktail\Controller\CocktailController::class => '',
+    ]
+);

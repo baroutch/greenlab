@@ -11,7 +11,18 @@ call_user_func(
             'Bloc Aperçu cocktail'
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'GreenLab.GlCocktail',
+            'pi2',
+            'Bloc Carte Cocktail'
+        );
+
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('gl_cocktail', 'Configuration/TypoScript', 'Plugin Cocktail');
+
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::makeCategorizable(
+            'gl_cocktail',
+            'tx_glcocktail_domain_model_cocktail'
+        );
 
     }
 );
