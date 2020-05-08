@@ -61,6 +61,20 @@ call_user_func(
             )
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'GreenLab.GlContent',
+            'Pi5',
+            array(
+                'Content' => 'blocContact',
+
+            ),
+            // non-cacheable actions
+            array(
+                'Content' => 'blocContact',
+
+            )
+        );
+
         // wizards
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
             'mod {
@@ -133,6 +147,26 @@ call_user_func(
                             tt_content_defValues {
                                 CType = list
                                 list_type = glcontent_pi4
+                            }
+                        }
+                    }
+                    show = *
+                }
+           }'
+        );
+
+        // wizards
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+            'mod {
+                wizards.newContentElement.wizardItems.plugins {
+                    elements {
+                        pi5 {
+                            iconIdentifier = extension-greenlab-content-bloccontact
+                            title = LLL:EXT:gl_content/Resources/Private/Language/locallang_db.xlf:tx_gl_content_domain_model_pi5
+                            description = LLL:EXT:gl_content/Resources/Private/Language/locallang_db.xlf:tx_gl_content_domain_model_pi5.description
+                            tt_content_defValues {
+                                CType = list
+                                list_type = glcontent_pi5
                             }
                         }
                     }

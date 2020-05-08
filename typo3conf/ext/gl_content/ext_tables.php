@@ -29,6 +29,12 @@ call_user_func(
             'Bloc Insta'
         );
 
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+            'GreenLab.GlContent',
+            'Pi5',
+            'Bloc Contact'
+        );
+
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('gl_content', 'Configuration/TypoScript', 'Plugin Content');
 
     }
@@ -63,4 +69,11 @@ $iconRegistry->registerIcon(
     'extension-greenlab-content-blocinsta',
     \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
     ['source' => 'EXT:gl_content/Resources/Public/Icons/insta.svg']
+);
+
+$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+$iconRegistry->registerIcon(
+    'extension-greenlab-content-bloccontact',
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => 'EXT:gl_content/Resources/Public/Icons/contact.svg']
 );

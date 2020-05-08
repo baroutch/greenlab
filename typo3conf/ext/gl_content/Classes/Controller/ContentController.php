@@ -50,4 +50,13 @@ class ContentController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
         return;
 
     }
+
+    public function blocContactAction(){
+
+        $this->view->assign('coord', $this->settings['coord']);
+        $this->view->assign('description', $this->settings['description']);
+
+        return;
+
+    }
 }
